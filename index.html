@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Number System Converter</title>
+   <link  rel="shortcut icon" href="favicon.png">
+   <script src="https://kit.fontawesome.com/d3b0dd7f4c.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+   <script src="app.js" defer></script>
+</head>
+
+<body>
+   <main>
+      <h1>Number System Converter</h1>
+      <div id="pos">
+         <span>From</span>
+         <span>To</span>
+      </div>
+
+      <div id="select-container">
+         
+         <select id="from-select">
+            <option value="from-decimal">Decimal</option>
+            <option value="from-hexadecimal">Hexadecimal</option>
+            <option value="from-octal">Octal</option>
+            <option value="from-binary">Binary</option>
+         </select>
+         
+         <select id="to-select">
+            <option value="to-decimal">Decimal</option>
+            <option value="to-hexadecimal">Hexadecimal</option>
+            <option value="to-octal">Octal</option>
+            <option value="to-binary">Binary</option>
+         </select>
+      </div>
+
+       
+      <div id="input-container">
+         <span id="user-input">Enter the Decimal Number</span> 
+         <input type="text" id="from-input">
+         <span id="error"></span>
+      </div>
+
+      <span id="result">Result (Decimal Number)</span>
+      <input type="text" id="to-input" readonly>
+      
+      <div id="btn">
+         <button id="convert-button">Convert</button>
+         <button id="swap-button">Swap</button><br/>
+         <button type="reset" id="reset-button">Reset</button>
+      </div>
+   </main>
+
+
+</body>
+
+</html>
